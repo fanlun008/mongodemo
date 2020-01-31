@@ -1,0 +1,15 @@
+#spring:
+#  data:
+#    mongodb:
+#      uri: mongodb://name:pass@localhost:27017/template
+
+
+server:
+  port: 9090
+
+
+audience:
+  clientId: 098f6bcd4621d373cade4e832627b4f6 # 代表这个JWT的接收对象,存入audience
+  base64Secret: MDk4ZjZiY2Q0NjIxZDM3M2NhZGU0ZTgzMjYyN2I0ZjY=  # 密钥, 经过Base64加密, 可自行替换
+  issuer: restapiuser   # JWT的签发主体，存入issuer
+  expiresSecond: 600000  # 过期时间，时间戳
